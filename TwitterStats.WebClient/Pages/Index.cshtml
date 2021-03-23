@@ -1,0 +1,77 @@
+﻿@page
+@Html.AntiForgeryToken()
+
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="row alert-info">
+    <div class="col-7">
+        <ul>
+            <li>Please make sure TwitterStats.DataProcessing function project is started</li>
+        </ul>
+    </div>
+</div>
+<div class="row">&nbsp;</div>
+<div id="alert" class="row alert-warning" style="visibility: hidden">
+    <div class="col-7">
+        <ul id="messagesList">
+            <li id="looking">Looking for data...</li>
+        </ul>
+    </div>
+</div>
+
+<div class="row">&nbsp;</div>
+<div class="row">
+    <div class="col-2">
+         
+            <input type="button" id="sendButton" value="Start Tweet Collection"
+                   @{ if (Model.RunningCollection) { @: disabled="disabled"
+                   } } />
+          
+        <div id="spinner" class="spin" 
+             @{ if (!Model.RunningCollection) { @: style="visibility: hidden"
+                   } }
+             ></div>
+    </div>
+     
+</div>
+<div class="row">&nbsp;</div>
+
+<div class="row">
+    <div class="column1" style="">
+        <div>Total Recived</div>
+        <div>Per Hour Average</div>
+        <div>Per Minute Average</div>
+        <div>Per Second Average</div>
+        <div>Top Emojis</div>
+        <div>Top Hashtags</div>
+        <div>Top Mentions</div>
+        <div>Top Domains</div>
+        <div>Percent with Emojis</div>
+        <div>Percent with Pics</div>
+        <div>Percent with Urls</div>
+    </div>
+    <div class="column2" style="">
+        <div id="TotalRecived"></div>
+        <div id="PerHourAverage"></div>
+        <div id="PerMinuteAverage"></div>
+        <div id="PerSecondAverage"></div>
+        <div id="TopEmojis"></div>
+        <div id="TopHashtags"></div>
+        <div id="TopMentions"></div>
+        <div id="TopDomains"></div>
+        <div id="PercentEmojis"></div>
+        <div id="PercentPics"></div>
+        <div id="PercentUrls"></div>
+    </div>
+
+
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/stats.js"></script>
+<script src="~/js/queue.js"></script>
+

@@ -1,0 +1,8 @@
+﻿{
+  "TweetCount": 134,
+  "RawTweetData": "{'data':{'author_id':'88316613','text':'RT @EvandroLaCoste: @FuckViktus ❤️❤️❤️','id':'1373809823192641536','created_at':'2021-03-22T01:32:40.000Z'},'includes':{'users':[{'created_at':'2009-11-08T01:13:44.000Z','username':'FuckViktus','name':'Aconteceu Comigo','id':'88316613'}]}}",
+  "PartitionKey": null,
+  "RowKey": null,
+  "Timestamp": "0001-01-01T00:00:00+00:00",
+  "ETag": null
+}

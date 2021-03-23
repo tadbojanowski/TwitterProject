@@ -1,0 +1,17 @@
+﻿{
+  "Averages": {
+    "TotalRecived": 278,
+    "PerHourAverage": 3456.435324,
+    "PerMinuteAverage": 245.3563,
+    "PerSecondAverage": 57.45645
+  },
+  "Stats": {
+    "TopEmojis": "[😭, 14],[❤, 9],[✨, 8],[🤣, 7],[😂, 6]",
+    "TopHashtags": "[#呪術廻戦, 4],[#SB19KenWHATMenPa, 3],[#CRAVITY, 2],[#SB19, 2],[#MVอ้อนไม่เก่ง, 2]",
+    "TopMentions": "[@SB19Official, 5],[@thebox_movie, 2],[@uratasama_kari, 2],[@mngwell_, 1],[@VijayVst0502, 1]",
+    "TopDomains": "[twitter.com, 90],[t.co, 7],[www.youtube.com, 2],[onlyfans.com, 1],[han.gl, 1]",
+    "PercentEmojis": 25.539568345323744,
+    "PercentPics": 51.07913669064749,
+    "PercentUrls": 35.611510791366911
+  }
+}
